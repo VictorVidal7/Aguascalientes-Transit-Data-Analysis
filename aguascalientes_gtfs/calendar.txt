@@ -1,0 +1,2 @@
+"service_id","monday","tuesday","wednesday","thursday","friday","saturday","sunday","start_date","end_date"
+"100716-700_Timetable_-_2019-01","1","1","1","1","1","1","1","20190107","20190807"
