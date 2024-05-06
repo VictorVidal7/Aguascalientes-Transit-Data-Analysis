@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3beafe1ef0b8254d296776a8f88b5ccd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3beafe1ef0b8254d296776a8f88b5ccd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3beafe1ef0b8254d296776a8f88b5ccd = L.map(
+                "map_3beafe1ef0b8254d296776a8f88b5ccd",
+                {
+                    center: [21.896216638297872, -102.29754423404259],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5dd54c5f1c34eb6c7b890d85c0de8cb7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5dd54c5f1c34eb6c7b890d85c0de8cb7.addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            var marker_18d1842b7afc1c9d909cfd23cbda6f42 = L.marker(
+                [21.848902, -102.319622],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_18d1842b7afc1c9d909cfd23cbda6f42.bindTooltip(
+                `<div>
+                     Terminal de Camiones Vicente Guerrero
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_106369a844a0a5f32243c2f912031fa2 = L.marker(
+                [21.847298, -102.320171],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_106369a844a0a5f32243c2f912031fa2.bindTooltip(
+                `<div>
+                     Av. de los Maestros - Camilo López
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cced1bfb3d9528c1b4f2e9d77c5d87bc = L.marker(
+                [21.844891, -102.322029],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_cced1bfb3d9528c1b4f2e9d77c5d87bc.bindTooltip(
+                `<div>
+                     Av. de los Maestros - Barandales de San José
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44f54d79efa3c41eaa9a9ef99f3d7e8b = L.marker(
+                [21.842834, -102.321841],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_44f54d79efa3c41eaa9a9ef99f3d7e8b.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Bodega Aurrerá Santa Mónica
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_120dd873c10b82aa51f0fb34f07e6f75 = L.marker(
+                [21.842582, -102.316844],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_120dd873c10b82aa51f0fb34f07e6f75.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Santa Monica
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_358d9650b1a3fa8f091d948daea33f66 = L.marker(
+                [21.843731, -102.312764],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_358d9650b1a3fa8f091d948daea33f66.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Panteón San Francisco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d8407d76b4463e3ee7f0988c5cf695f = L.marker(
+                [21.844904, -102.308338],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1d8407d76b4463e3ee7f0988c5cf695f.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Oxxo Gas Cualli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c62490fdf9de14ffafee9985a0ae0b5c = L.marker(
+                [21.845488, -102.305053],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c62490fdf9de14ffafee9985a0ae0b5c.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Dolores Del Río
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57beb5b0f164087be326fc5314b62bc8 = L.marker(
+                [21.847021, -102.301243],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_57beb5b0f164087be326fc5314b62bc8.bindTooltip(
+                `<div>
+                     Pilar Blanco - Prol. Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2abce41247e3c171e0d3d2152fa22dd = L.marker(
+                [21.850157, -102.301036],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d2abce41247e3c171e0d3d2152fa22dd.bindTooltip(
+                `<div>
+                     Pilar Blanco - Prol. Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0fda457217cd24631ded21ba701e24d = L.marker(
+                [21.852397, -102.300823],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d0fda457217cd24631ded21ba701e24d.bindTooltip(
+                `<div>
+                     Pilar Blanco - Prol. Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5d0a85da261b8df027ca6f4d87274e5 = L.marker(
+                [21.855403, -102.300817],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c5d0a85da261b8df027ca6f4d87274e5.bindTooltip(
+                `<div>
+                     Pilar Blanco - Prol. Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6df7d311de63b4600bcbabd9da391a3 = L.marker(
+                [21.856226, -102.300658],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_f6df7d311de63b4600bcbabd9da391a3.bindTooltip(
+                `<div>
+                     Pilar Blanco - Prol. Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5708ce1c6234e698415fc4b45b8e0ed = L.marker(
+                [21.858879, -102.299629],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_f5708ce1c6234e698415fc4b45b8e0ed.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Nevado de Colima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e380646de73f6c358b1c06c6964edb79 = L.marker(
+                [21.859921, -102.299171],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_e380646de73f6c358b1c06c6964edb79.bindTooltip(
+                `<div>
+                     Avenida Aguascalientes Sur - Prol Paseo de la Asunción
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4db0fa06ebb2bcc4734ef1a479254b20 = L.marker(
+                [21.861551, -102.299916],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_4db0fa06ebb2bcc4734ef1a479254b20.bindTooltip(
+                `<div>
+                     Quinta Avenida - Fray Antonio de Segovia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b3a9da9eb4d91de6aa33ec717856909 = L.marker(
+                [21.863251, -102.298829],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1b3a9da9eb4d91de6aa33ec717856909.bindTooltip(
+                `<div>
+                     Quinta Avenida - República de Honduras
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c92ba7e785f4094445fac2e011f6bea5 = L.marker(
+                [21.865665, -102.299521],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c92ba7e785f4094445fac2e011f6bea5.bindTooltip(
+                `<div>
+                     República de Brasil - República de Guatemala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c42961f4af62eb51e957f6987aa98b8 = L.marker(
+                [21.866035, -102.298977],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_5c42961f4af62eb51e957f6987aa98b8.bindTooltip(
+                `<div>
+                     Central Camionera Aguascalientes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77ecc9f2b9dde2fee3119da25401495b = L.marker(
+                [21.865811, -102.297687],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_77ecc9f2b9dde2fee3119da25401495b.bindTooltip(
+                `<div>
+                     Av de la Convención de 1914 - Quinta Avenida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0c6c31f262adaee5dcd3a68f3140dd5 = L.marker(
+                [21.866094, -102.294141],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c0c6c31f262adaee5dcd3a68f3140dd5.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Imss Zona 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cd594f7a5d9e8e6157461728ecd6cfa = L.marker(
+                [21.868342, -102.294518],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1cd594f7a5d9e8e6157461728ecd6cfa.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Hernán González
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdedb283b1a9db78ca1ba477081b00c9 = L.marker(
+                [21.870678, -102.294912],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_fdedb283b1a9db78ca1ba477081b00c9.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Centro de Convenciones Medrano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fad370596db15b5a24f78a95de8b758 = L.marker(
+                [21.871421, -102.295023],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_7fad370596db15b5a24f78a95de8b758.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Av Paseo de la Cruz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fda2fd13bc4c7ab35947064c42f2c7b6 = L.marker(
+                [21.875193, -102.294875],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_fda2fd13bc4c7ab35947064c42f2c7b6.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Pimentel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bffef85d88cb37b799b9eee9d7d7e54 = L.marker(
+                [21.876502, -102.295194],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_8bffef85d88cb37b799b9eee9d7d7e54.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Profra. Vicenta Trujillo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97667a0249f37e37ee3caca405c28f79 = L.marker(
+                [21.884737, -102.297688],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_97667a0249f37e37ee3caca405c28f79.bindTooltip(
+                `<div>
+                     5 de Mayo - Zona Centro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63c0396051e0b0bbc657e89481797d73 = L.marker(
+                [21.887224, -102.296695],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_63c0396051e0b0bbc657e89481797d73.bindTooltip(
+                `<div>
+                     5 de Mayo - Plaza del Mariachi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6bab6c59891ecb17f7f175401708235 = L.marker(
+                [21.889261, -102.295444],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d6bab6c59891ecb17f7f175401708235.bindTooltip(
+                `<div>
+                     5 de Mayo - Jesús María
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5b509b9c53a13447e8615ffbf824e4e = L.marker(
+                [21.892725, -102.293659],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_b5b509b9c53a13447e8615ffbf824e4e.bindTooltip(
+                `<div>
+                     Petróleos Mexicanos - Gral. Enrique Estrada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1c7d40f2e5f1f5bc0d31288f30236fb = L.marker(
+                [21.896351, -102.291923],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d1c7d40f2e5f1f5bc0d31288f30236fb.bindTooltip(
+                `<div>
+                     Prof Jose Reyes Martinez - General Miguel Barragan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f668e65092b15124db10fc94ce5518d = L.marker(
+                [21.899434, -102.292305],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_4f668e65092b15124db10fc94ce5518d.bindTooltip(
+                `<div>
+                     General Miguel Barragan - Calle Alfredo Lewis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2880622f580f7f330df426c03460b581 = L.marker(
+                [21.903032, -102.292382],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_2880622f580f7f330df426c03460b581.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Celso Bernal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c876e0ae051709ad0ee19ab7ae1ea984 = L.marker(
+                [21.904559, -102.292337],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c876e0ae051709ad0ee19ab7ae1ea984.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Ébano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25477a7c9cabb5f5053dfd25e65c5b61 = L.marker(
+                [21.907435, -102.292227],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_25477a7c9cabb5f5053dfd25e65c5b61.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Aglaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a189d5370b31e2d8c3fb1c02ae1a014 = L.marker(
+                [21.911552, -102.291545],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1a189d5370b31e2d8c3fb1c02ae1a014.bindTooltip(
+                `<div>
+                     Av. Héroe de Nacozari Nte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82837d05c34762a3b9f45e0cf48740fe = L.marker(
+                [21.924528, -102.291201],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_82837d05c34762a3b9f45e0cf48740fe.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Centro Comercial Altaria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fb040a6dd7ba42d1aa96b031e81fc77 = L.marker(
+                [21.929363, -102.291237],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_8fb040a6dd7ba42d1aa96b031e81fc77.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Pasteurizadora Aguascalientes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ff96eb4d0beb88282d9552cf9109152 = L.marker(
+                [21.933354, -102.291051],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_9ff96eb4d0beb88282d9552cf9109152.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Duragas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba0dc4a7e499dc864566a6b816f90dcb = L.marker(
+                [21.942322, -102.290691],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_ba0dc4a7e499dc864566a6b816f90dcb.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - San Francisco de los Romos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb95d6a36661890d4534fa78afbc7bf8 = L.marker(
+                [21.961448, -102.289271],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_bb95d6a36661890d4534fa78afbc7bf8.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Flextronics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00f5808bf30b99244d83fac1ce857b04 = L.marker(
+                [21.966009, -102.289553],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_00f5808bf30b99244d83fac1ce857b04.bindTooltip(
+                `<div>
+                     Carretera Federal 45 - Parque Industrial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b1fe7da5891c64a4247e4d7c26245af = L.marker(
+                [21.969405, -102.289431],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_6b1fe7da5891c64a4247e4d7c26245af.bindTooltip(
+                `<div>
+                     Carretera Federal 45 - San Francisco de los Romos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f3e8f358acb3da0fb130b3d5f16f807 = L.marker(
+                [21.973318, -102.289231],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_7f3e8f358acb3da0fb130b3d5f16f807.bindTooltip(
+                `<div>
+                     Carretera Federal 45 - Viñedos Rivier
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d233cf13affae871832820c3b63c639 = L.marker(
+                [21.990386, -102.290761],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_4d233cf13affae871832820c3b63c639.bindTooltip(
+                `<div>
+                     Carretera Panamericana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a11fe7b241652fa9186c9c418469ef6 = L.marker(
+                [21.998119, -102.288154],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_2a11fe7b241652fa9186c9c418469ef6.bindTooltip(
+                `<div>
+                     Carretera Panamericana - Bugambilia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_185bf5ddb316fb1428f0bfda931dea95 = L.marker(
+                [22.003071, -102.291168],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_185bf5ddb316fb1428f0bfda931dea95.bindTooltip(
+                `<div>
+                     Calle Paseo Margaritas - Paseos Gómez Portugal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d71af2d9ff600a8283c4505f9b40e89 = L.marker(
+                [22.001229, -102.295569],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1d71af2d9ff600a8283c4505f9b40e89.bindTooltip(
+                `<div>
+                     Terminal de Camiones Gómez Portugal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c4d9ed6f04e96e7e90b99b73a2de525 = L.marker(
+                [22.002467, -102.289374],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_7c4d9ed6f04e96e7e90b99b73a2de525.bindTooltip(
+                `<div>
+                     Calle Paseo Margaritas - Calle Paseo San Antonio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ab2f954ea3032f9cd41072538686a8e = L.marker(
+                [22.001401, -102.288511],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_0ab2f954ea3032f9cd41072538686a8e.bindTooltip(
+                `<div>
+                     Calle Paseo Margaritas - Paseos Gómez Portugal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aacd73d9e78ab973d999ea72d38e9e38 = L.marker(
+                [21.999081, -102.288491],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_aacd73d9e78ab973d999ea72d38e9e38.bindTooltip(
+                `<div>
+                     Carretera Panamericana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_349c9929fa15c671a2e8930651b0555b = L.marker(
+                [21.993331, -102.288709],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_349c9929fa15c671a2e8930651b0555b.bindTooltip(
+                `<div>
+                     Carretera Panamericana - Morelos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_458fab966b22c96064af41a86e62d525 = L.marker(
+                [21.987991, -102.290013],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_458fab966b22c96064af41a86e62d525.bindTooltip(
+                `<div>
+                     Paseo de Argenta - Los Reales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dc3ac62341831669d4615328f5cf13f = L.marker(
+                [21.969947, -102.289912],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_4dc3ac62341831669d4615328f5cf13f.bindTooltip(
+                `<div>
+                     Nuevo Agropecuario - Viñedos San Marcos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d01f74cad0c0cef21272688c21c3fab9 = L.marker(
+                [21.968447, -102.290021],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d01f74cad0c0cef21272688c21c3fab9.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Calle Paseos de Maravillas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a9b9a5e9ae08320bd8b41a6fe616e6c = L.marker(
+                [21.963279, -102.292356],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_3a9b9a5e9ae08320bd8b41a6fe616e6c.bindTooltip(
+                `<div>
+                     Calle Paseos de Venaderos - Calle Paseo de Frutilandia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9dfca109337da3427dfd6f1dacfdd5d6 = L.marker(
+                [21.960241, -102.29024],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_9dfca109337da3427dfd6f1dacfdd5d6.bindTooltip(
+                `<div>
+                     Flextronics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6e0405b8f55f22d1c89d5a8aab34c5c = L.marker(
+                [21.938811, -102.29141],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_a6e0405b8f55f22d1c89d5a8aab34c5c.bindTooltip(
+                `<div>
+                     Av. Niños Heroes - Blvd. A Zacatecas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba6cc246854a2415da5e830d1052b7d7 = L.marker(
+                [21.933391, -102.291399],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_ba6cc246854a2415da5e830d1052b7d7.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Mini bodegas Guardabox
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2c578f64b4174fad5eed503a75c0d6e = L.marker(
+                [21.930933, -102.291932],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_f2c578f64b4174fad5eed503a75c0d6e.bindTooltip(
+                `<div>
+                     Luis Gil - Blvd. A Zacatecas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43a22b6ebba77617d9805c33b305147a = L.marker(
+                [21.926336, -102.291823],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_43a22b6ebba77617d9805c33b305147a.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Hotel Las Trojes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d85329ff305054b5c7b66dc69fca3391 = L.marker(
+                [21.923876, -102.291981],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_d85329ff305054b5c7b66dc69fca3391.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Galerias
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aec9bb051a984102226c89fcd90b1238 = L.marker(
+                [21.913825, -102.292272],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_aec9bb051a984102226c89fcd90b1238.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - Agropecuario
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64e139a66f76344fbc98b0c1fa823a70 = L.marker(
+                [21.908305, -102.292428],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_64e139a66f76344fbc98b0c1fa823a70.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas - El Plateado
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63293582566e0aadab2fcb157f20a3b9 = L.marker(
+                [21.904247, -102.292659],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_63293582566e0aadab2fcb157f20a3b9.bindTooltip(
+                `<div>
+                     Blvd. A Zacatecas -Ébano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37899549d3c2e7f508d65aa2c7beef1e = L.marker(
+                [21.899338, -102.292568],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_37899549d3c2e7f508d65aa2c7beef1e.bindTooltip(
+                `<div>
+                     Petróleos Mexicanos - Calle Alfredo Lewis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27566fd41b756c716039256ac2e1d0c8 = L.marker(
+                [21.896516, -102.292983],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_27566fd41b756c716039256ac2e1d0c8.bindTooltip(
+                `<div>
+                     Petróleos Mexicanos - Gertrudis Berkefer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccad556066911bdfc5c3cda57011c218 = L.marker(
+                [21.893517, -102.293187],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_ccad556066911bdfc5c3cda57011c218.bindTooltip(
+                `<div>
+                     Petróleos Mexicanos - Calle Privada Norberto Gómez Hornedo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22e970ae4a371bfd6a929ed32da80d66 = L.marker(
+                [21.892438, -102.293957],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_22e970ae4a371bfd6a929ed32da80d66.bindTooltip(
+                `<div>
+                     Petróleos Mexicanos - Gran Avenida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dfd70b12c0601cdca2715e2c24e48f2 = L.marker(
+                [21.890351, -102.293908],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_2dfd70b12c0601cdca2715e2c24e48f2.bindTooltip(
+                `<div>
+                     México - Fresnillo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e1adcf8592a0c6d71e477f7db42ec58 = L.marker(
+                [21.889383, -102.293862],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_0e1adcf8592a0c6d71e477f7db42ec58.bindTooltip(
+                `<div>
+                     Gral. José María Artega - Calle Gral. Ignacio Zaragoza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa7f45ec907325092cfa7ab35d755cb6 = L.marker(
+                [21.886806, -102.296544],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_fa7f45ec907325092cfa7ab35d755cb6.bindTooltip(
+                `<div>
+                     Gral. José María Artega - Jardín de Zaragoza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_854a722adb2f5eda55844e4202bb3066 = L.marker(
+                [21.884691, -102.295681],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_854a722adb2f5eda55844e4202bb3066.bindTooltip(
+                `<div>
+                     José María Morelos y Pavon - Mercado Morelos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6adb21ac5438c027435c3901f0c2be0f = L.marker(
+                [21.880077, -102.294179],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_6adb21ac5438c027435c3901f0c2be0f.bindTooltip(
+                `<div>
+                     Dr Jesús Díaz de León - Antonio Acevedo E
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42f8990b849b26eed835876f1e139466 = L.marker(
+                [21.877746, -102.293392],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_42f8990b849b26eed835876f1e139466.bindTooltip(
+                `<div>
+                     Dr Jesús Díaz de León - Del Sol
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c433720e0525681598594e48710c9102 = L.marker(
+                [21.875071, -102.292555],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_c433720e0525681598594e48710c9102.bindTooltip(
+                `<div>
+                     Dr Jesús Díaz de León - Jardín del Encino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8dd30d170bc11ae1ab10f0439328efd = L.marker(
+                [21.872444, -102.292382],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_e8dd30d170bc11ae1ab10f0439328efd.bindTooltip(
+                `<div>
+                     Av Paseo de la Cruz - Calle Cristobal Colon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72f0b6fd22f377d213efe21c4242fc8e = L.marker(
+                [21.870279, -102.295192],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_72f0b6fd22f377d213efe21c4242fc8e.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - Av Mahatma Gandhi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd9ed8879c46df397f4e74b61ed1415b = L.marker(
+                [21.866991, -102.294622],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_bd9ed8879c46df397f4e74b61ed1415b.bindTooltip(
+                `<div>
+                     Av José Ma. Chávez - León Aguascalientes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39227a75a088080c5ac22d25b1c21146 = L.marker(
+                [21.865296, -102.293684],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_39227a75a088080c5ac22d25b1c21146.bindTooltip(
+                `<div>
+                     Av de la Convención de 1914 Sur - Av José Ma. Chávez
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3f1e8e12323306788445dcd2ce1d2f2 = L.marker(
+                [21.865448, -102.298288],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_b3f1e8e12323306788445dcd2ce1d2f2.bindTooltip(
+                `<div>
+                     Quinta Avenida - República de Guatemala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b06824e521fd2f1d8b83739f281b8063 = L.marker(
+                [21.863204, -102.299232],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_b06824e521fd2f1d8b83739f281b8063.bindTooltip(
+                `<div>
+                     Quinta Avenida - República Mexicana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba3d33641d9117d77337321730e640d5 = L.marker(
+                [21.858916, -102.299469],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_ba3d33641d9117d77337321730e640d5.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Nevado de Colima
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db8a3c9c4756ba79106d4b9ccf76f985 = L.marker(
+                [21.855972, -102.301123],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_db8a3c9c4756ba79106d4b9ccf76f985.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Prol. Diego Fernández Villa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d4b4af0a00672cf1c63873a66d37e53 = L.marker(
+                [21.853423, -102.301211],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_2d4b4af0a00672cf1c63873a66d37e53.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Prof. Enrique Olivares Santana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b45ddc51c1f3f4540bda37fcb4a5d87a = L.marker(
+                [21.851071, -102.301164],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_b45ddc51c1f3f4540bda37fcb4a5d87a.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Av Dr Mariano Azuela
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8341b3839a758013bd0f7c276b262e1e = L.marker(
+                [21.847127, -102.301451],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_8341b3839a758013bd0f7c276b262e1e.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Gral. Julián Medina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb9f665107c3a76d1e7afc805eb348ad = L.marker(
+                [21.845615, -102.301619],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_eb9f665107c3a76d1e7afc805eb348ad.bindTooltip(
+                `<div>
+                     Prol Paseo de la Asunción - Avenida Siglo Xxi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fd505d64841a23a67f74c73a13daa6a = L.marker(
+                [21.844834, -102.310305],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_1fd505d64841a23a67f74c73a13daa6a.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Lázaro Cardenas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e7096003fd1827893230b4a00d416d5 = L.marker(
+                [21.844246, -102.312324],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_9e7096003fd1827893230b4a00d416d5.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - Padua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_784fa8287436e88b4251882b30014287 = L.marker(
+                [21.842781, -102.31767],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_784fa8287436e88b4251882b30014287.bindTooltip(
+                `<div>
+                     Avenida Siglo XXI - San Antonio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51ce85a5ee8934083c37e25cc1a4cfbc = L.marker(
+                [21.846433, -102.320257],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_51ce85a5ee8934083c37e25cc1a4cfbc.bindTooltip(
+                `<div>
+                     Av. de los Maestros - Morelos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aae5ef168fc9eceebaeb8da1abdfdd15 = L.marker(
+                [21.848691, -102.319305],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_aae5ef168fc9eceebaeb8da1abdfdd15.bindTooltip(
+                `<div>
+                     Av. de los Maestros - Av Revolución
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cc0c36b5ad92982dd74da49e8c32cf9 = L.marker(
+                [21.849711, -102.316358],
+                {}
+            ).addTo(map_3beafe1ef0b8254d296776a8f88b5ccd);
+        
+    
+            marker_8cc0c36b5ad92982dd74da49e8c32cf9.bindTooltip(
+                `<div>
+                     Ing. Camilo Arriaga -Gral. Maclovio Herrera
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
